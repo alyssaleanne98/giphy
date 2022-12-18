@@ -1,7 +1,14 @@
+const GiphDisplay = ({ giph }) => {
+    console.log(giph)
+    return giph.data ? (
+        <>
+        <p>Use Giphy to pull some giphs</p>
+            <img src={giph.data.images.downsized.url} alt={giph.data.title} />
+        </>
+    ) : (
+        <div></div>
 
-
-const GiphDisplay = (props) => {
-    return <h1> GiphDisplay component </h1>
+    )
 }
 
-export default GiphDisplay
+export default GiphDisplay;

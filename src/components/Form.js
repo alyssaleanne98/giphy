@@ -1,5 +1,10 @@
-const Form = (props) => {
-    return <h1> Form component</h1>
+import React, {useState} from "react"
+
+const Form = ({props}) => {
+    return (
+    <button onClick={props}>Make API call</button>
+
+    )
 }
 
-export default Form
+export default Form;
